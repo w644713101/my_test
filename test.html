@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+      function guid() {
+        var res = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = Math.random() * 16 | 0,
+            v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+        console.log(res)
+    return res
+}
+guid() // "a1ca0f7b-51bd-4bf3-a5d5-6a74f6adc1c7"
+
+
+    </script>
+</head>
+<body>
+<button onclick="guid()">abc</button>
+</body>
+</html>
