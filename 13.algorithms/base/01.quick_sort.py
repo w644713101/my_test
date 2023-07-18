@@ -2,7 +2,7 @@
 # @Time    : 2023/7/17 13:47
 # @Author  : wzh
 # @Email   : 644713101@qq.com
-# @File    : quick_sort.py
+# @File    : 01.quick_sort.py
 
 def partition(arr, low, high):
     i = (low - 1)  # 记录最后一个移动的点
