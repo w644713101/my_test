@@ -1,15 +1,12 @@
-
 def partition(arr, low, high):
     i = low - 1
-    pivot = arr[high]
+    p = arr[high]
     for j in range(low, high):
-        if arr[j] <= pivot:
+        if arr[j] <= p:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    i += 1
-    arr[i], arr[high] = arr[high], arr[i]
-    return i
 
+    arr[i]
 
 def quick_sort(arr, low, high):
     if low < high:
@@ -23,5 +20,7 @@ quick_sort(arr, 0, n-1)
 print("排序后的数组:")
 for i in range(n):
     print("%d" %arr[i])
+
+
 
 
